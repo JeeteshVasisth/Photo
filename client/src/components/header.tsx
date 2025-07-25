@@ -28,7 +28,7 @@ export function Header() {
           <Link href="/" data-testid="link-home">
             <div className="flex items-center cursor-pointer">
               <h1 className="text-xl font-semibold portfolio-secondary">
-                Alex Morgan
+                Jeetesh Vasisth
               </h1>
               <span className="ml-3 text-sm portfolio-neutral-dark">Photography</span>
             </div>
