@@ -7,6 +7,7 @@ export const PHOTO_CONFIG: Omit<Photo, "id">[] = [
     title: "City Shadows",
     description: "Exploring the interplay of light and shadow in urban architecture, this photograph captures the geometric beauty found in everyday city structures.",
     category: "Architecture",
+    tags: ["urban", "shadows", "buildings", "geometric", "city"],
     date: "March 2024",
     location: "New York, NY",
     camera: "Sony A7R IV",
@@ -23,6 +24,7 @@ export const PHOTO_CONFIG: Omit<Photo, "id">[] = [
     title: "Natural Grace",
     description: "A study in natural light and human emotion, capturing authentic moments that tell a deeper story.",
     category: "Portrait",
+    tags: ["portrait", "natural light", "emotion", "people", "grace"],
     date: "February 2024",
     location: "Central Park, NY",
     camera: "Canon EOS R5",
@@ -41,6 +43,7 @@ export const PHOTO_CONFIG: Omit<Photo, "id">[] = [
   //   title: "Photo Title",
   //   description: "Photo description here",
   //   category: "Category (e.g., Portrait, Landscape, Street, Architecture)",
+  //   tags: ["moon", "flowers", "sunset", "city", "nature"], // searchable tags
   //   date: "Month Year",
   //   location: "City, State/Country",
   //   camera: "Camera model",

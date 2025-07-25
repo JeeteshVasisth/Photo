@@ -5,6 +5,7 @@ export const photoSchema = z.object({
   title: z.string(),
   description: z.string(),
   category: z.string(),
+  tags: z.array(z.string()).default([]),
   date: z.string(),
   location: z.string(),
   camera: z.string(),

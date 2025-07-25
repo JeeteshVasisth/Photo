@@ -7,6 +7,7 @@ import { Header } from "@/components/header";
 import { PhotoModal } from "@/components/photo-modal";
 import { Footer } from "@/components/footer";
 import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
 import { Skeleton } from "@/components/ui/skeleton";
 import NotFound from "@/pages/not-found";
 
@@ -101,6 +102,25 @@ export default function PhotoDetail() {
                   <p className="portfolio-neutral-dark mb-6 leading-relaxed text-lg" data-testid="text-photo-description">
                     {photo.description}
                   </p>
+
+                  {/* Tags */}
+                  {photo.tags && photo.tags.length > 0 && (
+                    <div className="mb-6">
+                      <h4 className="font-medium portfolio-secondary mb-3">Tags</h4>
+                      <div className="flex flex-wrap gap-2" data-testid="photo-tags">
+                        {photo.tags.map((tag, index) => (
+                          <Badge
+                            key={tag}
+                            variant="secondary"
+                            className="bg-portfolio-neutral-light portfolio-secondary"
+                            data-testid={`badge-tag-${index}`}
+                          >
+                            {tag}
+                          </Badge>
+                        ))}
+                      </div>
+                    </div>
+                  )}
                   
                   <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-sm mb-6">
                     <div>

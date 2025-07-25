@@ -80,6 +80,11 @@ The application uses Zod schemas for type validation:
 - Added technical metadata fields to Photo schema: lens, iso, aperture, shutterSpeed, focalLength
 - Updated photo detail pages and modal to display camera settings and technical information
 - Enhanced code-based photo management with example technical metadata
+- Implemented search functionality with search bar and tag filtering
+- Added tags array to Photo schema for improved categorization and searchability
+- Created SearchBar component with real-time search and popular tag selection
+- Updated PhotoGrid to show filtered results and search statistics
+- Added tag displays to photo cards, detail pages, and modal overlays
 
 ### Deployment Strategy
 

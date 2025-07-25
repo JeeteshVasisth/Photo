@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { X, ChevronLeft, ChevronRight, Share, Download } from "lucide-react";
 import { type Photo } from "@shared/schema";
 import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
 import { useToast } from "@/hooks/use-toast";
 
 interface PhotoModalProps {
@@ -159,6 +160,24 @@ export function PhotoModal({ photo, photos, isOpen, onClose, onNavigate }: Photo
                   <p className="portfolio-neutral-dark mb-4" data-testid="text-modal-description">
                     {photo.description}
                   </p>
+
+                  {/* Tags */}
+                  {photo.tags && photo.tags.length > 0 && (
+                    <div className="mb-4">
+                      <div className="flex flex-wrap gap-2" data-testid="modal-photo-tags">
+                        {photo.tags.map((tag, index) => (
+                          <Badge
+                            key={tag}
+                            variant="secondary"
+                            className="bg-portfolio-neutral-light portfolio-secondary text-xs"
+                            data-testid={`modal-badge-tag-${index}`}
+                          >
+                            {tag}
+                          </Badge>
+                        ))}
+                      </div>
+                    </div>
+                  )}
                   
                   <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm mb-4">
                     <div>
