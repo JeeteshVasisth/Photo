@@ -102,7 +102,7 @@ export default function PhotoDetail() {
                     {photo.description}
                   </p>
                   
-                  <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-sm">
+                  <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-sm mb-6">
                     <div>
                       <span className="portfolio-neutral-dark block mb-1">Category</span>
                       <p className="font-medium" data-testid="text-photo-category">{photo.category}</p>
@@ -118,6 +118,43 @@ export default function PhotoDetail() {
                     <div>
                       <span className="portfolio-neutral-dark block mb-1">Camera</span>
                       <p className="font-medium" data-testid="text-photo-camera">{photo.camera}</p>
+                    </div>
+                  </div>
+
+                  {/* Technical Details */}
+                  <div className="border-t border-portfolio-neutral pt-6">
+                    <h4 className="font-medium portfolio-secondary mb-4">Technical Details</h4>
+                    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 text-sm">
+                      {photo.lens && (
+                        <div>
+                          <span className="portfolio-neutral-dark block mb-1">Lens</span>
+                          <p className="font-medium" data-testid="text-photo-lens">{photo.lens}</p>
+                        </div>
+                      )}
+                      {photo.iso && (
+                        <div>
+                          <span className="portfolio-neutral-dark block mb-1">ISO</span>
+                          <p className="font-medium" data-testid="text-photo-iso">{photo.iso}</p>
+                        </div>
+                      )}
+                      {photo.aperture && (
+                        <div>
+                          <span className="portfolio-neutral-dark block mb-1">Aperture</span>
+                          <p className="font-medium" data-testid="text-photo-aperture">{photo.aperture}</p>
+                        </div>
+                      )}
+                      {photo.shutterSpeed && (
+                        <div>
+                          <span className="portfolio-neutral-dark block mb-1">Shutter Speed</span>
+                          <p className="font-medium" data-testid="text-photo-shutter-speed">{photo.shutterSpeed}</p>
+                        </div>
+                      )}
+                      {photo.focalLength && (
+                        <div>
+                          <span className="portfolio-neutral-dark block mb-1">Focal Length</span>
+                          <p className="font-medium" data-testid="text-photo-focal-length">{photo.focalLength}</p>
+                        </div>
+                      )}
                     </div>
                   </div>
                 </div>

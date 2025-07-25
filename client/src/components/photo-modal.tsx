@@ -160,7 +160,7 @@ export function PhotoModal({ photo, photos, isOpen, onClose, onNavigate }: Photo
                     {photo.description}
                   </p>
                   
-                  <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+                  <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm mb-4">
                     <div>
                       <span className="portfolio-neutral-dark">Category</span>
                       <p className="font-medium" data-testid="text-modal-category">{photo.category}</p>
@@ -176,6 +176,43 @@ export function PhotoModal({ photo, photos, isOpen, onClose, onNavigate }: Photo
                     <div>
                       <span className="portfolio-neutral-dark">Camera</span>
                       <p className="font-medium" data-testid="text-modal-camera">{photo.camera}</p>
+                    </div>
+                  </div>
+
+                  {/* Technical Details */}
+                  <div className="border-t border-portfolio-neutral pt-4">
+                    <h5 className="font-medium portfolio-secondary mb-3 text-sm">Technical Details</h5>
+                    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 text-sm">
+                      {photo.lens && (
+                        <div>
+                          <span className="portfolio-neutral-dark">Lens</span>
+                          <p className="font-medium" data-testid="text-modal-lens">{photo.lens}</p>
+                        </div>
+                      )}
+                      {photo.iso && (
+                        <div>
+                          <span className="portfolio-neutral-dark">ISO</span>
+                          <p className="font-medium" data-testid="text-modal-iso">{photo.iso}</p>
+                        </div>
+                      )}
+                      {photo.aperture && (
+                        <div>
+                          <span className="portfolio-neutral-dark">Aperture</span>
+                          <p className="font-medium" data-testid="text-modal-aperture">{photo.aperture}</p>
+                        </div>
+                      )}
+                      {photo.shutterSpeed && (
+                        <div>
+                          <span className="portfolio-neutral-dark">Shutter Speed</span>
+                          <p className="font-medium" data-testid="text-modal-shutter-speed">{photo.shutterSpeed}</p>
+                        </div>
+                      )}
+                      {photo.focalLength && (
+                        <div>
+                          <span className="portfolio-neutral-dark">Focal Length</span>
+                          <p className="font-medium" data-testid="text-modal-focal-length">{photo.focalLength}</p>
+                        </div>
+                      )}
                     </div>
                   </div>
                 </div>

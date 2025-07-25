@@ -10,6 +10,11 @@ export const PHOTO_CONFIG: Omit<Photo, "id">[] = [
     date: "March 2024",
     location: "New York, NY",
     camera: "Sony A7R IV",
+    lens: "24-70mm f/2.8",
+    iso: "400",
+    aperture: "f/8.0",
+    shutterSpeed: "1/125s",
+    focalLength: "35mm",
     imageUrl: "https://images.unsplash.com/photo-1486325212027-8081e485255e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=1000",
     aspectRatio: "portrait",
     featured: true,
@@ -21,11 +26,33 @@ export const PHOTO_CONFIG: Omit<Photo, "id">[] = [
     date: "February 2024",
     location: "Central Park, NY",
     camera: "Canon EOS R5",
+    lens: "85mm f/1.4",
+    iso: "200",
+    aperture: "f/2.0",
+    shutterSpeed: "1/200s",
+    focalLength: "85mm",
     imageUrl: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=1067",
     aspectRatio: "portrait",
     featured: false,
   },
   // Add more photos here following the same structure
+  // Example of required fields for new photos:
+  // {
+  //   title: "Photo Title",
+  //   description: "Photo description here",
+  //   category: "Category (e.g., Portrait, Landscape, Street, Architecture)",
+  //   date: "Month Year",
+  //   location: "City, State/Country",
+  //   camera: "Camera model",
+  //   lens: "Lens model (optional)",
+  //   iso: "ISO value (optional)",
+  //   aperture: "f/X.X (optional)",
+  //   shutterSpeed: "1/XXXs (optional)",
+  //   focalLength: "XXmm (optional)",
+  //   imageUrl: "https://your-image-url.com",
+  //   aspectRatio: "square" | "portrait" | "landscape" | "wide" | "tall",
+  //   featured: true/false,
+  // }
 ];
 
 // Utility functions for photo management

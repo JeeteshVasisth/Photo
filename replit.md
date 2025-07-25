@@ -73,8 +73,13 @@ Preferred communication style: Simple, everyday language.
 
 The application uses Zod schemas for type validation:
 
-- **Photo Schema**: Includes id, title, description, category, date, location, camera, imageUrl, aspectRatio, and featured status
+- **Photo Schema**: Includes id, title, description, category, date, location, camera, lens, iso, aperture, shutterSpeed, focalLength, imageUrl, aspectRatio, and featured status
 - **Photographer Info Schema**: Contains name, bio, location, contact information, and specialties
+
+#### Recent Updates (January 2025)
+- Added technical metadata fields to Photo schema: lens, iso, aperture, shutterSpeed, focalLength
+- Updated photo detail pages and modal to display camera settings and technical information
+- Enhanced code-based photo management with example technical metadata
 
 ### Deployment Strategy
 
