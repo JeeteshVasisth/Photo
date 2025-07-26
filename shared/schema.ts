@@ -24,7 +24,7 @@ export const photographerInfoSchema = z.object({
   bio: z.string(),
   location: z.string(),
   email: z.string(),
-  phone: z.string(),
+  phone: z.string().optional(),
   specialties: z.array(z.string()),
 });
 

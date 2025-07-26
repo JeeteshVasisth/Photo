@@ -48,7 +48,7 @@ export function ContactSection() {
           Interested in collaborating or commissioning work? I'd love to hear about your project and discuss how we can create something beautiful together.
         </p>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
           <div className="text-center">
             <div className="w-12 h-12 bg-portfolio-accent rounded-lg flex items-center justify-center mx-auto mb-4">
               <Mail className="w-6 h-6 text-white" />
@@ -56,16 +56,6 @@ export function ContactSection() {
             <h4 className="font-medium mb-2">Email</h4>
             <p className="portfolio-neutral-dark" data-testid="text-contact-email">
               {photographer.email}
-            </p>
-          </div>
-          
-          <div className="text-center">
-            <div className="w-12 h-12 bg-portfolio-accent rounded-lg flex items-center justify-center mx-auto mb-4">
-              <Phone className="w-6 h-6 text-white" />
-            </div>
-            <h4 className="font-medium mb-2">Phone</h4>
-            <p className="portfolio-neutral-dark" data-testid="text-contact-phone">
-              {photographer.phone}
             </p>
           </div>
           

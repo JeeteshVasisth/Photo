@@ -159,7 +159,6 @@ export class MemStorage implements IStorage {
     bio: "With over a decade of experience in photography, I specialize in capturing the extraordinary in the ordinary. My work focuses on the intersection of urban landscapes, human emotion, and natural beauty. Based in New York City, I draw inspiration from the constantly changing urban environment and the stories that unfold within it. Each photograph is an invitation to see the world through a different lens.",
     location: "New Delhi, India",
     email: "jeeteshvasisth@gmail.com",
-   // phone: "+91 7042821416",
     specialties: ["Architecture", "Street Photography", "Portraits", "Landscapes"],
   };
 
