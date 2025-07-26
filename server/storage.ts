@@ -152,6 +152,24 @@ export class MemStorage implements IStorage {
       aspectRatio: "square",
       featured: true,
     },
+    {
+      id: "9",
+      title: "My Photo",
+      description: "A personal photograph uploaded to the portfolio showcasing my photographic work.",
+      category: "Personal",
+      tags: ["personal", "portfolio", "photography"],
+      date: "January 2025",
+      location: "Personal Collection",
+      camera: "Digital Camera",
+      lens: "Standard Lens",
+      iso: "100",
+      aperture: "f/5.6",
+      shutterSpeed: "1/125s",
+      focalLength: "50mm",
+      imageUrl: "/photo.jpg",
+      aspectRatio: "landscape",
+      featured: true,
+    },
   ];
 
   private photographerInfo: PhotographerInfo = {

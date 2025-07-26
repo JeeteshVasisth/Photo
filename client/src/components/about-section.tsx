@@ -42,7 +42,7 @@ export function AboutSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <img 
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600"
+              src="/photo.jpg"
               alt="Photographer portrait"
               className="w-full max-w-md mx-auto lg:mx-0 rounded-lg shadow-lg"
               data-testid="img-photographer-portrait"
