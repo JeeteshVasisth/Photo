@@ -15,19 +15,24 @@ export function Footer() {
   };
 
   return (
-    <footer className="bg-portfolio-secondary text-white py-12 px-4 sm:px-6 lg:px-8" data-testid="footer">
+    <footer
+      className="bg-portfolio-secondary text-white py-12 px-4 sm:px-6 lg:px-8"
+      data-testid="footer"
+    >
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
-            <h4 className="text-xl font-semibold mb-2" data-testid="text-footer-name">
+            <h4
+              className="text-xl font-semibold mb-2"
+              data-testid="text-footer-name"
+            >
               {photographer?.name || "Alex Morgan"}
             </h4>
-            <p className="text-gray-300">Professional Photography</p>
           </div>
-          
+
           <div className="flex items-center space-x-6">
             <Link href="/">
-              <button 
+              <button
                 onClick={() => scrollToSection("portfolio")}
                 className="text-gray-300 hover:text-white transition-colors"
                 data-testid="button-footer-portfolio"
@@ -36,7 +41,7 @@ export function Footer() {
               </button>
             </Link>
             <Link href="/">
-              <button 
+              <button
                 onClick={() => scrollToSection("about")}
                 className="text-gray-300 hover:text-white transition-colors"
                 data-testid="button-footer-about"
@@ -45,7 +50,7 @@ export function Footer() {
               </button>
             </Link>
             <Link href="/">
-              <button 
+              <button
                 onClick={() => scrollToSection("contact")}
                 className="text-gray-300 hover:text-white transition-colors"
                 data-testid="button-footer-contact"
@@ -55,10 +60,11 @@ export function Footer() {
             </Link>
           </div>
         </div>
-        
+
         <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300">
           <p data-testid="text-footer-copyright">
-            &copy; 2024 {photographer?.name || "Alex Morgan"} Photography. All rights reserved.
+            &copy; 2024 {photographer?.name || "Alex Morgan"} Photography. All
+            rights reserved.
           </p>
         </div>
       </div>
