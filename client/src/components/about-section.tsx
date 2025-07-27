@@ -30,7 +30,7 @@ export function AboutSection() {
     return (
       <section id="about" className="bg-white py-20 px-4 sm:px-6 lg:px-8" data-testid="about-section-error">
         <div className="max-w-4xl mx-auto text-center">
-          <p className="text-red-500">Unable to load photographer information.</p>
+          <p className="text-red-500">Unable to load information.</p>
         </div>
       </section>
     );
@@ -50,7 +50,7 @@ export function AboutSection() {
           </div>
           <div>
             <h3 className="text-3xl font-medium portfolio-secondary mb-6" data-testid="text-about-title">
-              About {photographer.name.split(" ")[0]}
+              About Me
             </h3>
             <p className="portfolio-neutral-dark mb-6 leading-relaxed" data-testid="text-about-bio">
               {photographer.bio}

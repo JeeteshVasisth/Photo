@@ -13,10 +13,10 @@ export function HeroSection() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center py-12">
           <h2 className="text-4xl md:text-6xl font-light portfolio-secondary mb-6" data-testid="text-hero-title">
-            Capturing Moments,<br />Creating Stories
+            Capturing memories,<br />One shot at a time.
           </h2>
           <p className="text-lg portfolio-neutral-dark max-w-2xl mx-auto mb-8" data-testid="text-hero-description">
-            A curated collection of photography that explores the intersection of light, emotion, and human experience.
+            A curated collection of photography that explores the intersection of light, emotion, and a unique experience.
           </p>
           <div className="flex justify-center">
             <Button 
