@@ -55,7 +55,7 @@ export function AboutSection() {
             <p className="portfolio-neutral-dark mb-6 leading-relaxed" data-testid="text-about-bio">
               {photographer.bio}
             </p>
-            {/* <div className="flex flex-wrap gap-3" data-testid="specialties-list">
+            <div className="flex flex-wrap gap-3" data-testid="specialties-list">
               {photographer.specialties.map((specialty, index) => (
                 <Badge 
                   key={index} 
@@ -66,7 +66,7 @@ export function AboutSection() {
                   {specialty}
                 </Badge>
               ))}
-            </div>*/}
+            </div>
           </div>
         </div>
       </div>
